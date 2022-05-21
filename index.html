@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Calculator -->
+    <div class="caculator" data-aos="fade-right" data-aos-duration="3000" data-aos-delay="400">
+        <!-- Display -->
+        <div class="caculator-display">
+            <h1>0</h1>
+        </div>
+        <!-- Buttons -->
+        <div class="caculator-buttons">
+            <button class="operator" value="+">+</button>
+            <button class="operator" value="-">-</button>
+            <button class="operator" value="*">×</button>
+            <button class="operator" value="/">÷</button>
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button class="clear" id="clear-btn">C</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="0">0</button>
+            <button class="decimal" value=".">.</button>
+            <button class="clear-all" id="clear-all-btn">AC</button>
+            <button class="equal-sign operator" value= "=">=</button>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+  delay: 200, 
+  duration: 1500, 
+  once: false, 
+  mirror: false, 
+  anchorPlacement: 'top-bottom', 
+  });
+</script>
+<script src="app.js"></script>
+</body>
+</html>
